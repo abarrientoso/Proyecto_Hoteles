@@ -1,0 +1,60 @@
+﻿
+
+@{ ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout - Login.cshtml"; }
+
+<head>
+    <link href="~/WebStyles/css/hotel.css" rel="stylesheet">
+</head>
+
+<div class="d-flex flex-row justify-content-between" style="margin-bottom: 150px;">
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/1.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Wyndham Garden San Jose Escazu</h5>
+            <a href="@Url.Action("Hotel1", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/2.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Intercontinental</h5>
+            <a href="@Url.Action("Hotel2", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/3.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Gran Hotel Costa Rica</h5>
+            <a href="@Url.Action("Hotel3", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-between" style="margin-bottom: 80px;">
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/4.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Barcelo San José</h5>
+            <a href="@Url.Action("Hotel4", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/5.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Sheraton San Jose Hotel, Costa Rica</h5>
+            <a href="@Url.Action("Hotel5", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="~/WebStyles/img_hotel/6.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Occidental Papagayo - Adults only</h5>
+            <a href="@Url.Action("Hotel6", "Hotel")" class="btn btn-primary">Ver</a>
+        </div>
+    </div>
+</div>

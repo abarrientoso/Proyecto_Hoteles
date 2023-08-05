@@ -1,0 +1,78 @@
+﻿
+
+@{ ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout - Login.cshtml"; }
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cvX4jJm2W1WNE8eIbJ9iS1tkiX4D" crossorigin="anonymous">
+    <link href="~/WebStyles/css/hotel.css" rel="stylesheet">
+</head>
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="main-img">
+                <img class="img-fluid" src="~/WebStyles/img_hotel/5.jpg" alt="ProductS">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="main-description px-2">
+                <div class="product-title text-bold my-3">
+                    Sheraton San Jose Hotel, Costa Rica
+                </div>
+
+
+                <div class="price-area my-4">
+                    <p class="old-price mb-1"><del>$100</del> <span class="old-price-discount text-danger">(20% off)</span></p>
+                    <p class="new-price text-bold mb-1">$80</p>
+                    <p class="text-secondary mb-1">(Additional tax may apply on checkout)</p>
+
+                </div>
+
+
+                <div class="buttons d-flex my-5">
+
+                    <div class="block">
+                        <button class="shadow btn custom-btn" data-toggle="modal" data-target="#basicModal">Reservar</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="product-details my-4">
+                <p class="details-title text-color mb-1">Detalles</p>
+                <p class="description">Ubicado en el suburbio de moda de primer nivel de Escazú, el Sheraton San Jose Hotel, Costa Rica está cerca de las atracciones y las conveniencias del área metropolitana, con un ritmo más relajado. Estamos a solo cinco kilómetros al oeste del parque Sabana y a nueve kilómetros de la ciudad de San José. Cerca de importantes oficinas corporativas, restaurantes y tiendas, el hotel se encuentra a corta distancia a pie de Golden Mile, el centro comercial de Escazú. Nuestras habitaciones ofrecen comodidades de primer nivel para garantizar una estancia relajante. Manténgase conectado con el acceso inalámbrico a Internet de alta velocidad en un escritorio de trabajo con silla ergonómica. Mire una película en el televisor con pantalla plana LCD de 42 pulgadas con canales de cable, o escuche su música favorita en la estación/reloj/radio iHome®. Disfrute de una noche de descanso reparador en las suaves camas Sheraton Sweet Sleeper®. Después de pasar un día con amigos, con la familia o haciendo negocios, aún queda una cosa por disfrutar en este hotel Sheraton, la calidez de nuestras habitaciones, que son totalmente para no fumadores.</p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <!-- Agrega la clase text-center para centrar los botones -->
+                <button type="button" class="btn btn-primary">Habitacion Estandar</button> <br /> <br />
+                <button type="button" class="btn btn-primary">Habitacion Premium</button> <br /> <br />
+                <button type="button" class="btn btn-primary">Suite</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
