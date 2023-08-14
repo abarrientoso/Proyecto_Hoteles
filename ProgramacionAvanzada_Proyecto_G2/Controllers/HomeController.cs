@@ -28,6 +28,11 @@ namespace ProgramacionAvanzada_Proyecto_G2.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Recuperar()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult IniciarSesion(UsuarioEnt entidad)
@@ -74,14 +79,6 @@ namespace ProgramacionAvanzada_Proyecto_G2.Controllers
                 ViewBag.MsjPantalla = "No se ha podido registrar su información";
                 return View("Registro");
             }
-        }
-
-
-
-        [HttpGet]
-        public ActionResult Recuperar()
-        {
-            return View();
         }
 
         [HttpPost]

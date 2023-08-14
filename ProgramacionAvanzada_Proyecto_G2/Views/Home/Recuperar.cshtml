@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout - Login.cshtml";
 }
 
-@using (Html.BeginForm("Registro", "Home", FormMethod.Post))
+@using (Html.BeginForm("RecuperarContrasenna", "Home", FormMethod.Post))
 {
     <div class="row justify-content-center" style="width: 1200px; height: 700px;">
         <div class="col-md-6 mt-5">
@@ -27,7 +27,7 @@
                                 @Html.TextBoxFor(m => m.correoElectronico, new { @type = "email", @class = "form-control input-lg", @placeholder = "Correo Electrónico" })
                             </div>
                             <div class="col-md-12" style="text-align:center">
-                                <button type="submit" class="btn btn-primary btn-pill mb-4">Registrarse</button>
+                                <button type="submit" class="btn btn-primary btn-pill mb-4">Enviar</button>
                                 <p>
                                     <a class="text-blue" href="@Url.Action("Index", "Home")">Ir al Inicio</a>
                                 </p>

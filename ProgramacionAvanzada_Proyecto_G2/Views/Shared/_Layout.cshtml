@@ -43,6 +43,12 @@
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
                                 <a href="about.html" class="nav-item nav-link">Hoteles</a>
+                                @if (Session["IdRolSesion"].ToString() == "1")
+                                {
+                                <a href="@Url.Action("Dashboard", "Usuario")" class="nav-item nav-link">Mantenimiento</a>
+                                }
+                                <a href="@Url.Action("CerrarSesion","Usuario")" class="nav-item nav-link" style="margin-left: auto;">Cerrar Sesión</a>
+
                             </div>
                         </div>
                     </nav>
