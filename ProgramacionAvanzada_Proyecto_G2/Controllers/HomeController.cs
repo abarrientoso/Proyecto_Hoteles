@@ -62,6 +62,7 @@ namespace ProgramacionAvanzada_Proyecto_G2.Controllers
         public ActionResult Registrarse(UsuarioEnt entidad)
         {
             entidad.idRol = 2;
+            entidad.nombreRol = "user";
             entidad.estado = true;
 
             var resp = model.Registrarse(entidad);
